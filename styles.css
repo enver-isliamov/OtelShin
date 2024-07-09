@@ -134,6 +134,24 @@ h1 {
 // жидкостная кнопка ниже
 
 .button {
+  position: relative;
+  display: inline-block;
+  padding: 12px 36px;
+  margin: 10px;
+  color: #fff;
+  font-size: 1.4rem;
+  letter-spacing: 2px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  box-sizing: border-box;
+
+  
+  // liquid button
+
+  &--liquidButton {
     overflow: hidden;
     span {
       position: relative;
@@ -182,7 +200,7 @@ h1 {
       }
     }
   }
-} 
+}
 
 
 /*
