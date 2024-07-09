@@ -134,13 +134,13 @@ h1 {
 // жидкостная кнопка ниже
 
 .button {
-    overflow: hidden; /* Скрывает содержимое, выходящее за пределы кнопки */
+    overflow: hidden;
     span {
       position: relative;
-      z-index: 1; /* Задает позиционирование и уровень слоя для текста в кнопке */
+      z-index: 1;
     }
     &:hover div {
-      top: -120px; /* При наведении на кнопку, сдвигает вложенный div вверх */
+      top: -120px;
     }
     div {
       position: absolute;
@@ -148,36 +148,36 @@ h1 {
       left: 0;
       width: 200px;
       height: 200px;
-      background: #4973ff; /* Задает фон для вложенного div */
-      box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.5); /* Внутренняя тень для создания эффекта глубины */
-      transition: 0.5s; /* Переход длительностью 0.5 секунд */
-      
+      background: #4973ff;
+      box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.5);
+      transition: 0.5s;
+
       &::before,
       &::after {
-        content: ""; /* Создает псевдоэлементы перед и после вложенного div */
+        content: "";
         position: absolute;
         top: 0;
         left: 50%;
         width: 200%;
         height: 200%;
-        transform: translate(-50%, -75%); /* Сдвигает псевдоэлементы по осям X и Y */
+        transform: translate(-50%, -75%);
       }
       &::before {
-        border-radius: 45%; /* Скругляет углы псевдоэлемента до 45% */
-        background: rgba(20, 20, 20, 1); /* Задает черный фон для псевдоэлемента */
-        animation: liquidAnimation 10s linear infinite; /* Анимация для псевдоэлемента */
+        border-radius: 45%;
+        background: rgba(20, 20, 20, 1);
+        animation: liquidAnimation 10s linear infinite;
       }
       &::after {
-        border-radius: 40%; /* Скругляет углы второго псевдоэлемента до 40% */
-        background: rgba(20, 20, 20, 0.5); /* Задает полупрозрачный черный фон для псевдоэлемента */
-        animation: liquidAnimation 10s linear infinite; /* Анимация для второго псевдоэлемента */
+        border-radius: 40%;
+        background: rgba(20, 20, 20, 0.5);
+        animation: liquidAnimation 10s linear infinite;
       }
       @keyframes liquidAnimation {
         0% {
-          transform: translate(-50%, -75%) rotate(0deg); /* Начальное состояние анимации */
+          transform: translate(-50%, -75%) rotate(0deg);
         }
         100% {
-          transform: translate(-50%, -75%) rotate(360deg); /* Конечное состояние анимации: полный оборот */
+          transform: translate(-50%, -75%) rotate(360deg);
         }
       }
     }
