@@ -179,3 +179,18 @@ h1 {
             text-decoration: none;
             cursor: pointer;
         }
+.button-close {
+            display: block;
+            width: 100px;
+            margin: 20px auto 0;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            text-align: center;
+            cursor: pointer;
+        }
+        .button-close:hover {
+            background-color: #45a049;
+        }
