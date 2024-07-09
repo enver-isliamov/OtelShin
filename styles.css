@@ -1,231 +1,192 @@
- body {
-            font-family: Arial, sans-serif;
-            background: linear-gradient(120deg, #f0f9ff 50%, #fff 100%);
-            color: #333;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-        }
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(120deg, #f0f9ff 50%, #fff 100%);
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
 
-        .container {
-            max-width: 800px;
-            width: 100%;
-            padding: 20px;
-            box-sizing: border-box;
-            background-color: rgba(255, 255, 255, 0.9);
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
+.container {
+    max-width: 800px;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
 
-        h1 {
-            font-size: 2.5em;
-            margin-bottom: 20px;
-            padding: 10px;
-            border-radius: 10px;
-        }
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 10px;
+}
 
-        .light-blue-background {
-            background-color: #eff7fd;
-            padding: 20px;
-            border-radius: 10px;
-            margin-bottom: 20px;
-            text-align: left;
-        }
+.light-blue-background {
+    background-color: #eff7fd;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    text-align: left;
+}
 
-        .list-item {
-            display: block;
-            margin-bottom: 10px;
-        }
+.list-item {
+    display: block;
+    margin-bottom: 10px;
+}
 
-        .list-item::before {
-            content: "✔️ ";
-        }
+.list-item::before {
+    content: "✔️ ";
+}
 
-        .carousel {
-            margin-bottom: 20px;
-        }
+.carousel {
+    margin-bottom: 20px;
+}
 
-        .carousel-item {
-            text-align: left;
-            padding: 10px;
-            background-color: #fff;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            margin-bottom: 10px;
-        }
+.carousel-item {
+    text-align: left;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+}
 
-        .carousel-item strong {
-            display: block;
-            font-size: 1.2em;
-            margin-bottom: 5px;
-        }
+.carousel-item strong {
+    display: block;
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
 
-        .carousel-item p {
-            font-size: 1em;
-            line-height: 1.4;
-        }
+.carousel-item p {
+    font-size: 1em;
+    line-height: 1.4;
+}
 
-        .carousel-price {
-            overflow-x: auto;
-            margin-bottom: 20px;
-            width: calc(100% - 40px);
-            margin-left: auto;
-            margin-right: auto;
-            padding-left: 20px;
-            padding-right: 20px;
-            white-space: nowrap;
-        }
+.carousel-price {
+    overflow-x: auto;
+    margin-bottom: 20px;
+    width: calc(100% - 40px);
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    white-space: nowrap;
+}
 
-        .carousel-price-item {
-            display: inline-block;
-            vertical-align: top;
-            margin: 0 10px;
-            width: calc(50% - 20px);
-            max-width: 150px;
-            transition: transform 0.3s ease;
-            white-space: normal;
-        }
+.carousel-price-item {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 10px;
+    width: calc(50% - 20px);
+    max-width: 150px;
+    transition: transform 0.3s ease;
+    white-space: normal;
+}
 
-        .carousel-price-item .tile {
-            text-align: center;
-            padding: 10px;
-            background: linear-gradient(120deg, #f0f9ff 50%, #fff 100%);
-            border-radius: 15px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease;
-        }
+.carousel-price-item .tile {
+    text-align: center;
+    padding: 10px;
+    background: linear-gradient(120deg, #f0f9ff 50%, #fff 100%);
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
 
-        .carousel-price-item .tile img {
-            max-width: 100%;
-            border-radius: 10px;
-            margin-bottom: 10px;
-        }
+.carousel-price-item .tile img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
 
-        .carousel-price-item .tile .price-text {
-            font-size: 1.2em;
-            font-weight: bold;
-            white-space: nowrap;
-        }
+.carousel-price-item .tile .price-text {
+    font-size: 1.2em;
+    font-weight: bold;
+    white-space: nowrap;
+}
 
-        .additional-info {
-            text-align: left;
-            margin-bottom: 20px;
-        }
+.additional-info {
+    text-align: left;
+    margin-bottom: 20px;
+}
 
-        .additional-info strong {
-            display: block;
-            font-size: 1.2em;
-            margin-bottom: 5px;
-        }
+.additional-info strong {
+    display: block;
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
 
-        .additional-info ul {
-            list-style-type: disc;
-            margin-left: 20px;
-        }
+.additional-info ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
 
-        .contacts {
-            margin-top: 30px;
-            text-align: center;
-        }
+.contacts {
+    margin-top: 30px;
+    text-align: center;
+}
 
-        .button {
-            display: inline-block;
-            padding: 12px 24px;
-            background-color: #00aaff;
-            color: #fff;
-            text-decoration: none;
-            border-radius: 5px;
-            margin: 10px;
-        }
+.button {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #00aaff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 10px;
+}
 
-        .button:hover {
-            background-color: #3390ec;
-        }
+.button:hover {
+    background-color: #3390ec;
+}
 
-        @media (max-width: 600px) {
-            .container {
-                padding: 10px;
-            }
+/* Стили для модального окна */
+.modal {
+    display: none; /* По умолчанию модальное окно скрыто */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Затемненный фон */
+    overflow: auto; /* Добавляем прокрутку, если содержимое модального окна не помещается на экран */
+}
 
-            h1 {
-                font-size: 2em;
-            }
+.modal-content {
+    background-color: #fefefe;
+    margin: 10% auto; /* Выравнивание по центру, 10% от верхнего края */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Ширина модального окна */
+    max-width: 600px; /* Максимальная ширина */
+    border-radius: 10px;
+    position: relative;
+}
 
-            .light-blue-background {
-                padding: 15px;
-            }
+.modal-close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
 
-            .list-item {
-                font-size: 0.8em;
-                margin-bottom: 8px;
-            }
+.modal-close:hover,
+.modal-close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
 
-            .carousel-item {
-                font-size: 0.9em;
-            }
-
-            .carousel-price-item {
-                width: 100%;
-                margin: 10px 0;
-            }
-
-            .carousel-price-item .tile {
-                padding: 8px;
-            }
-
-            .carousel-price-item .tile .price-text {
-                font-size: 1em;
-            }
-        }
-
-        /* Модальное окно */
-        .modal {
-            display: none; /* По умолчанию скрыто */
-            position: fixed;
-            z-index: 1000;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0,0,0,0.7);
-        }
-
-        .modal-content {
-            background-color: #fefefe;
-            margin: 15% auto;
-            padding: 20px;
-            border: 1px solid #888;
-            width: 80%;
-            max-width: 600px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-            position: relative;
-        }
-
-        .close {
-            color: #aaa;
-            float: right;
-            font-size: 28px;
-            font-weight: bold;
-        }
-
-        .close:hover,
-        .close:focus {
-            color: black;
-            text-decoration: none;
-            cursor: pointer;
-        }
-
-        /* Анимация для появления модального окна */
-        .modal.active {
-            display: block;
-            animation: modal-show 0.3s ease;
-        }
-
-        @keyframes modal-show {
-            from {opacity: 0}
-            to {opacity: 1}
-        }
+/* Адаптивные стили для модального окна */
+@media screen and (max-width: 600px) {
+    .modal-content {
+        width: 90%; /* Более узкое модальное окно на маленьких экранах */
+    }
+}
