@@ -8,7 +8,7 @@ var docFrame = document.getElementById('doc-frame');
 modalOpenBtn.onclick = function() {
     modal.style.display = 'block';
     // Загружаем содержимое Google Docs в iframe
-    docFrame.src = 'https://docs.google.com/document/d/1r7_mNG0VjecHp2Z4rN7ft0oh7-PQLEpkpsAqtC_P8fw/edit?usp=sharing';
+    docFrame.src = 'https://telegra.ph/DOGOVOR-HRANENIYA-SHIN-07-09';
 }
 
 // Закрываем модальное окно при клике на крестик
