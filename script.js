@@ -8,7 +8,7 @@ var docFrame = document.getElementById('doc-frame');
 modalOpenBtn.onclick = function() {
     modal.style.display = 'block';
     // Загружаем содержимое Google Docs в iframe
-    docFrame.src = 'https://telegra.ph/DOGOVOR-HRANENIYA-SHIN-07-09';
+    docFrame.src = 'https://enver-isliamov.github.io/Dogovor';
 }
 
 // Закрываем модальное окно при клике на крестик
