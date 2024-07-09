@@ -13,6 +13,11 @@
             modal.style.display = "none";
         }
 
+// Закрытие модального окна при клике на маленькую кнопку "Понятно"
+        btnCloseSmall.onclick = function() {
+            modal.style.display = "none";
+        }
+
         // Закрытие модального окна при клике вне окна
         window.onclick = function(event) {
             if (event.target == modal) {
