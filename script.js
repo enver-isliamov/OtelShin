@@ -1,7 +1,8 @@
-// JavaScript для открытия и закрытия модального окна
+ // JavaScript для открытия и закрытия модального окна
         var modal = document.getElementById("myModal");
         var btnOpen = document.getElementById("modal-open");
         var btnClose = document.getElementById("modal-close");
+        var btnCloseSmall = document.getElementById("button-close");
 
         // Открытие модального окна при клике на кнопку
         btnOpen.onclick = function() {
