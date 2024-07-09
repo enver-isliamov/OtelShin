@@ -5,17 +5,22 @@ var modalCloseBtn = document.getElementById('modal-close');
 
 // Открываем модальное окно при клике на кнопку Договор
 modalOpenBtn.onclick = function() {
-    modal.classList.add('active');
+    modal.style.display = "block";
 }
 
 // Закрываем модальное окно при клике на крестик
 modalCloseBtn.onclick = function() {
-    modal.classList.remove('active');
+    modal.style.display = "none";
 }
 
-// Закрываем модальное окно при клике за его пределами
+// Закрываем модальное окно при клике на кнопку "Понятно"
+document.querySelector('.modal-content .button').onclick = function() {
+    modal.style.display = "none";
+}
+
+// Закрываем модальное окно при клике вне его области
 window.onclick = function(event) {
     if (event.target == modal) {
-        modal.classList.remove('active');
+        modal.style.display = "none";
     }
 }
