@@ -25,24 +25,3 @@
                 modal.style.display = "none";
             }
         }
-///Анимация кнопок //пульсация btn
-const rippleBtn = document.getElementById("ripple");
-let ripples = document.createElement("span");
-let cleartimeout;
-
-// если хотите получить этот эффект при нажатии, просто добавьте щелчок вместо события наведения курсора мыши
-rippleBtn.addEventListener("mouseover", function (e) {
-  let x = e.clientX - e.target.offsetLeft;
-  let y = e.clientY - e.target.offsetTop;
-  ripples.style.left = x + "px";
-  ripples.style.top = y + "px";
-  this.appendChild(ripples);
-
-  cleartimeout = setTimeout(() => {
-    ripples.remove();
-  }, 1000);
-});
-
-rippleBtn.addEventListener("mouseout", function () {
-  ripples.remove(cleartimeout);
-});
