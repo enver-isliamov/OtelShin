@@ -197,9 +197,16 @@ h1 {
             background-color: #EFF9FD;
         }
 
+// ЛЕвая кнопка с анимашкой
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
 
 .btn {
-position: relative;
+  position: relative;
   display: inline-block;
   padding: 12px 36px;
   margin: 10px;
@@ -266,3 +273,4 @@ position: relative;
     }
   }
 }
+
