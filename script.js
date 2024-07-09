@@ -1,7 +1,26 @@
-// Находим кнопку Договор
+// Находим кнопку Договор и модальное окно
 var modalOpenBtn = document.getElementById('modal-open');
+var modal = document.getElementById('modal');
+var modalCloseBtn = document.getElementById('modal-close');
 
-// Открываем ссылку на Dogovor.html при клике на кнопку Договор
+// Открываем модальное окно при клике на кнопку Договор
 modalOpenBtn.onclick = function() {
-    window.open('https://enver-isliamov.github.io/Kopchek/Dogovor.html', '_blank');
+    modal.style.display = "block";
+}
+
+// Закрываем модальное окно при клике на крестик
+modalCloseBtn.onclick = function() {
+    modal.style.display = "none";
+}
+
+// Закрываем модальное окно при клике на кнопку "Понятно"
+document.querySelector('.modal-content .button').onclick = function() {
+    modal.style.display = "none";
+}
+
+// Закрываем модальное окно при клике вне его области
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
 }
