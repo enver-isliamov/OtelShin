@@ -1,272 +1,340 @@
-body{
-     font-family:Arial,sans-serif;
-     background:linear-gradient(120deg,#f0f9ff 50%,#fff 100%);
-     color:#7b7b9f;
-     margin:0;
-     padding:0;
-     display:flex;
-     justify-content:center;
-     align-items:center;
-     min-height:100vh 
-}
- h1{
-     font-size:2.5em;
-     margin-bottom:20px;
-     padding:10px;
-     border-radius:10px 
-}
- .list-item{
-     display:block;
-     margin-bottom:10px 
-}
- .list-item::before{
-     content:"✔️ " 
-}
- .container{
-     max-width:800px;
-     width:100%;
-     padding:20px;
-     box-sizing:border-box;
-     background-color:rgba(255,255,255,.9); // Тут  родной светлый фон rgba(255,255,255,.9)
-     border-radius:10px;
-     box-shadow:0 0 10px rgba(0,0,0,.1) margin:0 auto;
-}
- .section{
-     margin-bottom:10px;
-     padding:8px 8px;
-     text-align:center;
-     background-color:#fff
- }
-
- .slogan{
-     margin-bottom: 1em;
-     text-align:center;
-     background-color:#fff;
+:root {
+    --font-family: Arial, sans-serif;
+    --background-gradient: linear-gradient(120deg, #f0f9ff 50%, #fff 100%);
+    --text-color: #6C7486;
+    --textH-color: #3F4656;
+    --white-color: #fff;
+    --light-blue: #eff7fd;
+    --button-bg: #0af;
+    --button-hover-bg: #0099e6;
 }
 
-.light-blue-background{
-     background-color:#eff7fd;
-     padding:20px; // Отступ от краев в голубой плитке с гарантией
-     border-radius:10px;
-     margin-bottom: 1em;
-     text-align:left 
+body {
+    font-family: var(--font-family);
+    background: var(--background-gradient);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
 
- .section:nth-child(odd){
-     background-color:#fff 
-}
- .section:nth-child(2n){
-     background-color:#fff 
-}
- .section h2{
-     font-size:18px;
-     margin-bottom:10px 
-}
- .section p{
-     font-size:14px;
-     line-height:1.6 
-}
- .illustration{
-     width:100%;
-     max-width:100%;
-     height:auto;
-     display:block;
+h1, h2, h3 {
+    color: var(--textH-color);
 }
 
- .carousel{
-     display: flex; /* Используем Flexbox для горизонтального расположения элементов */
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.list-item {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.list-item::before {
+    content: "✔️ ";
+}
+
+.container {
+    max-width: 800px;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: var(--background-gradient);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    color: var(--text-color);
+}
+
+.section {
+    margin-bottom: 10px;
+    padding: 8px 8px;
+    text-align: center;
+    background-color: var(--white-color);
+}
+
+.slogan {
+    margin-bottom: 1em;
+    text-align: center;
+    background-color: var(--white-color);
+}
+
+.light-blue-background {
+    background-color: var(--light-blue);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 1em;
+    text-align: left;
+    color: var(--textH-color);
+}
+
+.section:nth-child(odd) {
+    background-color: var(--white-color);
+}
+
+.section:nth-child(2n) {
+    background-color: var(--white-color);
+}
+
+.section p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.illustration {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.carousel {
+    display: flex; /* Используем Flexbox для горизонтального расположения элементов */
     gap: 10px; /* Добавляем промежуток между элементами */
-     justify-content:center;
-     margin-bottom: 1em;
+    justify-content: center;
+    margin-bottom: 1em;
 }
- .carousel-item{
-     flex: 1; /* Элементы будут занимать равное пространство */
-     background-color:#fff;
-     padding: 10px; /* Добавим отступы внутри элементов */
-     border-radius:10px;
-     text-align:center; // Выравнивание текста в ШАГ1-2-3
-     box-shadow:0 4px 8px rgba(0,0,0,.1);
 
+.carousel-item {
+    flex: 1; /* Элементы будут занимать равное пространство */
+    background-color: var(--white-color);
+    padding: 10px; /* Добавим отступы внутри элементов */
+    border-radius: 10px;
+    text-align: center; /* Выравнивание текста в ШАГ1-2-3 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: var(--textH-color);
 }
- .carousel-item strong{
-     display:block;
-     font-size:20px;
-     margin-bottom:10px 
+
+.carousel-item strong {
+    display: block;
+    font-size: 20px;
+    margin-bottom: 10px;
 }
- .carousel-item p{
-     font-size:16px;
-     line-height:1.4 
+
+.carousel-item p {
+    font-size: 16px;
+    line-height: 1.4;
 }
- 
- .carousel-price-item .price-text{
-     font-size:14px;
-     margin-top:10px 
+
+.carousel-price-item .price-text {
+    font-size: 14px;
+    margin-top: 10px;
 }
- .carousel-price{
-     overflow-x: auto;
-     margin-bottom:20px;
-     width:calc(100% - 40px);
-     margin-bottom: 1em;
-     white-space:nowrap;
-display: flex; /* Используем Flexbox для горизонтального расположения элементов */
+
+.carousel-price {
+    overflow-x: auto;
+    margin-bottom: 1em;
+    width: calc(100% - 40px);
+    white-space: nowrap;
+    display: flex; /* Используем Flexbox для горизонтального расположения элементов */
 }
- .carousel-price-item{
-     display: flex; /* Гарантируем, что все внутренние элементы также будут располагаться горизонтально */
+
+.carousel-price-item {
+    display: flex; /* Гарантируем, что все внутренние элементы также будут располагаться горизонтально */
     gap: 10px; /* Добавим промежуток между элементами, если нужно */
-     vertical-align:top;
-     margin:0 10px;
-     width:calc(50% - 20px);
-     max-width:150px;
-     transition:transform .3s ease;
-     white-space:normal 
+    vertical-align: top;
+    margin: 0 10px;
+    width: calc(50% - 20px);
+    max-width: 150px;
+    transition: transform .3s ease;
+    white-space: normal;
 }
- .carousel-price-item .tile{
-     text-align:center;
-     padding:5px;
-     background:linear-gradient(120deg,#f0f9ff 50%,#fff 100%);
-     border-radius:10px;
-     box-shadow:0 4px 8px rgba(0,0,0,.1);
-     transition:transform .3s ease
+
+.carousel-price-item .tile {
+    text-align: center;
+    padding: 5px;
+    background: var(--background-gradient);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform .3s ease;
+    min-width: 150px; /* Минимальная ширина элемента */
+    color: var(--text-color);
+}
+
+.carousel-price-item .tile img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.carousel-price-item .tile .price-text {
+    font-size: 14px;
+    font-weight: 700;
+    white-space: break-spaces;
+}
+
+.additional-info {
+    background-color: var(--light-blue);
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: left;
+    color: var(--textH-color);
+}
+
+.additional-info strong {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.additional-info ul {
+    list-style-type: disc;
+    padding: 0;
+    margin-left: 20px;
+    text-align: left;
+}
+
+.additional-info li {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.contacts {
+    background-color: var(--white-color);
+    padding: 20px;
+    text-align: center;
+    margin-top: 30px;
+    display: flex;
+}
+
+.button {
+    display: inline-block;
+    background-color: var(--button-bg);
+    color: var(--white-color);
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 10px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: var(--button-hover-bg);
+}
+
+.button-dogovor {
+    display: inline-block;
+    background-color: var(--white-color);
+    color: var(--text-color);
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 10px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.button-dogovor:hover {
+    background-color: var(--background-gradient);
+border: 2px solid var(--white-color);
 
 }
 
-.tile{
-min-width: 150px; /* Минимальная ширина элемента */
+.pulse-button {
+    animation: pulse 1.5s infinite;
+    background-color: var(--button-bg);
+    color: var(--white-color);
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
- .carousel-price-item .tile img{
-     max-width:100%;
-     border-radius:10px;
-     
-}
- .carousel-price-item .tile .price-text{
-     font-size:14px;
-     font-weight:700;
-     white-space:break-spaces; 
-}
- .additional-info{
-     background-color:#e6f0f5;
-     padding:20px;
-     margin-bottom:20px text-align:left;
-}
- .additional-info strong{
-     display:block;
-     font-size:16px;
-     margin-bottom:10px 
-}
- .additional-info ul{
-     list-style-type:disc;
-     padding:0;
-     margin-left:20px;
-     text-align:left;
-     background-color:#e6f0f5;
-}
- .additional-info li{
-     font-size:14px;
-     line-height:1.6;
-     margin-bottom:10px 
-}
- .contacts{
-     background-color:#fff;
-     padding:20px;
-     text-align:center margin-top:30px;
-display: flex;
-}
- .button{
-     display:inline-block;
-     background-color:#0af;
-     color:#fff;
-     text-decoration:none;
-     padding:10px 20px;
-     border-radius:5px;
-     margin:10px;
-     font-size:16px 
-}
- .button:hover{
-     background-color:#0099e6 
+.pulse-button:hover {
+    background-color: var(--button-hover-bg);
 }
 
-.button-dogovor{
-     display:inline-block;
-     background-color:#fff;
-     color:#333;
-     text-decoration:none;
-     padding:10px 20px;
-     border-radius:5px;
-     margin:10px;
-     font-size:16px 
-}
- .button-dogovor:hover{
-     background-color:#e2e8f0 
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
 }
 
- .pulse-button{
-     animation:pulse 1.5s infinite 
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
 }
- @keyframes pulse{
-     0%{
-         transform:scale(1) 
+
+.modal-content {
+    background-color: var(--white-color);
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid var(--text-color);
+    width: 80%;
+    max-width: 800px;
+    position: relative;
+}
+
+.close {
+    color: #aaa;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.close:focus, .close:hover {
+    color: var(--textH-color);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.button-close {
+    display: block;
+    width: 100px;
+    margin: 20px auto 0;
+    background-color: var(--pulse-button-bg);
+    color: var(--white-color);
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button-close:hover {
+    background-color: var(--pulse-button-hover-bg);
+}
+
+@media (max-width: 768px) {
+    .carousel {
+        flex-wrap: wrap;
     }
-     50%{
-         transform:scale(1.1) 
-    }
-     100%{
-         transform:scale(1) 
+    .carousel-item, .carousel-price-item {
+        flex: 0 0 100%;
+        margin-bottom: 20px;
     }
 }
- .modal{
-     display:none;
-     position:fixed;
-     z-index:1000;
-     left:0;
-     top:0;
-     width:100%;
-     height:100%;
-     overflow:auto;
-     background-color:rgba(0,0,0,.5) 
-}
- .modal-content{
-     background-color:#fefefe;
-     margin:5% auto;
-     padding:20px;
-     border:1px solid #888;
-     width:80%;
-     max-width:800px;
-     position:relative 
-}
- .close{
-     color:#aaa;
-     position:absolute;
-     top:10px;
-     right:20px;
-     font-size:28px;
-     font-weight:700 
-}
- .close:focus,.close:hover{
-     color:#000;
-     text-decoration:none;
-     cursor:pointer 
-}
- .button-close{
-     display:block;
-     width:100px;
-     margin:20px auto 0;
-     background-color:#df3079;
-     color:#fff;
-     border:none;
-     border-radius:5px;
-     text-align:center;
-     cursor:pointer 
-}
- .button-close:hover{
-     background-color:#eff9fd 
-}
- @media (max-width:768px){
-     .carousel{
-         flex-wrap:wrap 
-    }
-     .carousel-item,.carousel-price-item{
-         flex:0 0 100%;
-         margin-bottom:20px 
-    }
-     
