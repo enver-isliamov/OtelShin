@@ -130,6 +130,7 @@ border-radius: 10px;
     display: block;
     font-size: 20px;
     margin-bottom: 10px;
+
 }
 
 .carousel-item p {
@@ -161,7 +162,7 @@ border-radius: 10px;
     white-space: normal;
 }
 
-.carousel-price-item .tile {
+.carousel-price-item .tile { /* Текуст в карточки услуг*/
     text-align: center;
     padding: 5px;
     background: var(--background-gradient);
@@ -169,7 +170,7 @@ border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform .3s ease;
     min-width: 150px; /* Минимальная ширина элемента */
-    color: var(--text-color);
+    color: var(--textH-color);
 }
 
 .carousel-price-item .tile img {
@@ -181,9 +182,11 @@ border-radius: 10px;
     font-size: 14px;
     font-weight: 700;
     white-space: break-spaces;
+
 }
 
-.additional-info {
+
+.additional-info { /* Блок голубой условия и что еще нужно знать*/
     background-color: var(--light-blue);
     padding: 20px;
     margin-bottom: 20px;
