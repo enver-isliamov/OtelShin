@@ -11,7 +11,7 @@
 
 body {
     font-family: var(--font-family);
-    background: var(--background-gradient);
+    background: var(--white-color);
     color: var(--text-color);
     margin: 0;
     padding: 0;
@@ -68,12 +68,16 @@ h3 {
     padding: 8px 8px;
     text-align: center;
     background-color: var(--white-color);
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+border-radius: 10px;
 }
 
 .slogan {
     margin-bottom: 1em;
     text-align: center;
     background-color: var(--white-color);
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+border-radius: 10px;
 }
 
 .light-blue-background {
