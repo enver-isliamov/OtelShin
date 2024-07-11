@@ -58,7 +58,6 @@ h3 {
     box-sizing: border-box;
     background-color: var(--background-gradient);
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin: 0 auto;
     color: var(--text-color);
 }
