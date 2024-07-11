@@ -153,7 +153,7 @@ border-radius: 10px;
 
 .carousel-price {
     overflow-x: auto;
-background: var(--background-gradient);
+background: var(--white-color);
     margin-bottom: 1em;
     width: calc(100%);
     white-space: nowrap;
