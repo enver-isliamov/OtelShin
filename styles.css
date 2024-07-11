@@ -146,7 +146,7 @@ border-radius: 10px;
 .carousel-price {
     overflow-x: auto;
     margin-bottom: 1em;
-    width: calc(100% - 40px);
+    width: calc(100%);
     white-space: nowrap;
     display: flex; /* Используем Flexbox для горизонтального расположения элементов */
 }
