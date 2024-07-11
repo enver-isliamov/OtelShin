@@ -344,15 +344,20 @@ border: 2px solid var(--white-color);
 
 .button-close {
     display: block;
-    width: 100px;
+    width: 120px;
     margin: 20px auto 0;
-    background-color: var(--pulse-button-bg);
     color: var(--white-color);
     border: none;
     border-radius: 5px;
     text-align: center;
     cursor: pointer;
     transition: background-color 0.3s ease;
+	flex: 1 1 100px;
+	font-size: 16px;
+	padding: 10px 20px;
+	text-decoration: none;
+	background-color: var(--button-bg);
+	animation: pulse 1.5s infinite;
 }
 
 .button-close:hover {
