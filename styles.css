@@ -1,5 +1,11 @@
+/* Импорт шрифта по ссылке */
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
 :root {
-    --font-family: Arial, sans-serif;
+    --font-family:"Noto Sans", sans-serif; /* "Exo 2", sans-serif;   "Yanone Kaffeesatz", sans-serif; */
     --background-gradient: linear-gradient(120deg, #f0f9ff 50%, #fff 100%);
     --text-color: #6C7486;
     --textH-color: #3F4656;
@@ -56,10 +62,12 @@ h3 {
     width: 100%;
     padding: 20px;
     box-sizing: border-box;
-    background-color: var(--background-gradient);
+    background-color: var(--white-color);
     border-radius: 10px;
     margin: 0 auto;
     color: var(--text-color);
+    text-align: center; /* Выровнять текст по центру */
+
 }
 
 .section {
@@ -113,6 +121,7 @@ border-radius: 10px;
     gap: 10px; /* Добавляем промежуток между элементами */
     justify-content: center;
     margin-bottom: 1em;
+
 }
 
 .carousel-item {
@@ -144,6 +153,7 @@ border-radius: 10px;
 
 .carousel-price {
     overflow-x: auto;
+background: var(--background-gradient);
     margin-bottom: 1em;
     width: calc(100%);
     white-space: nowrap;
@@ -164,7 +174,7 @@ border-radius: 10px;
 .carousel-price-item .tile { /* Текуст в карточки услуг*/
     text-align: center;
     padding: 5px;
-    background: var(--background-gradient);
+    background: var(--white-color);
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform .3s ease;
