@@ -166,7 +166,7 @@ background: var(--white-color);
     vertical-align: top;
     margin: 0 10px;
     width: calc(50% - 20px);
-    max-width: 150px;
+    max-width: 100px;
     transition: transform .3s ease;
     white-space: normal;
 }
