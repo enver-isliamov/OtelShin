@@ -136,13 +136,13 @@ border-radius: 10px;
 
 .carousel-item strong {
     display: block;
-    font-size: 20px;
+    font-size: 12px;
     margin-bottom: 10px;
 
 }
 
 .carousel-item p {
-    font-size: 14px;
+    font-size: 12px;
     line-height: 1.4;
 }
 
@@ -219,7 +219,7 @@ background: var(--white-color);
 
 .additional-info strong {
     display: block;
-    font-size: 14px;
+    font-size: 12px;
     margin-bottom: 10px;
 }
 
@@ -231,7 +231,7 @@ background: var(--white-color);
 }
 
 .additional-info li {
-    font-size: 14px;
+    font-size: 12px;
     line-height: 1.6;
     margin-bottom: 10px;
 }
