@@ -13,7 +13,6 @@
     --light-blue: #eff7fd;
     --button-bg: #0af;
     --button-hover-bg: #0099e6;
-    --opis: font-size: 38px;
 }
 
 body {
@@ -40,8 +39,7 @@ h1 {
 }
 
 h2 {
-    font-size: var(--opis);
-    /*font-size: 18px;*/
+    font-size: 18px;
     margin-bottom: 10px;
 }
 
@@ -55,7 +53,7 @@ h3 {
     margin-bottom: 10px;
 }
 
-.list-item::before {
+.list-item:before {
     content: "✔️ ";
 }
 
