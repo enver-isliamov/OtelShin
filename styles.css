@@ -105,7 +105,7 @@ border-radius: 10px;
 }
 
 .section p {
-    font-size: 14px;
+    font-size: 12px;
     line-height: 1.6;
 }
 
@@ -142,12 +142,12 @@ border-radius: 10px;
 }
 
 .carousel-item p {
-    font-size: 16px;
+    font-size: 14px;
     line-height: 1.4;
 }
 
 .carousel-price-item .price-text {
-    font-size: 14px;
+    font-size: 12px;
     margin-top: 10px;
 }
 
@@ -188,7 +188,7 @@ background: var(--white-color);
 }
 
 .carousel-price-item .tile .price-text {
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 700;
     white-space: break-spaces;
 
@@ -219,7 +219,7 @@ background: var(--white-color);
 
 .additional-info strong {
     display: block;
-    font-size: 16px;
+    font-size: 14px;
     margin-bottom: 10px;
 }
 
@@ -252,7 +252,7 @@ background: var(--white-color);
     padding: 10px 20px;
     border-radius: 5px;
     margin: 10px;
-    font-size: 16px;
+    font-size: 14px;
     transition: background-color 0.3s ease;
     flex: 1 1 100px;
 }
@@ -269,7 +269,7 @@ background: var(--white-color);
     padding: 10px 20px;
     border-radius: 5px;
     margin: 10px;
-    font-size: 16px;
+    font-size: 14px;
     transition: background-color 0.3s ease;
 animation: pulse-dogovor 1.5s infinite;
 }
