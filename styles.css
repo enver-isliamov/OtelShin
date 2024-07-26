@@ -13,6 +13,7 @@
     --light-blue: #eff7fd;
     --button-bg: #0af;
     --button-hover-bg: #0099e6;
+    --opis: font-size: 38px;
 }
 
 body {
@@ -39,7 +40,8 @@ h1 {
 }
 
 h2 {
-    font-size: 18px;
+    font-size: var(--opis);
+    /*font-size: 18px;*/
     margin-bottom: 10px;
 }
 
