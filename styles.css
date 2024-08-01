@@ -398,3 +398,30 @@ border: 2px solid var(--white-color);
         margin-bottom: 20px;
     }
 }
+
+.header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 60px;
+            background-color: #f8f9fa;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+        }
+        .logo {
+            height: 40px; /* Установите высоту логотипа */
+        }
+        .location {
+            flex-grow: 1;
+            text-align: center;
+        }
+        .phone-icon {
+            width: 24px; /* Установите ширину иконки телефона */
+            height: 24px;
+            cursor: pointer;
+        }
