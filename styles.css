@@ -138,8 +138,8 @@ flex-wrap: wrap;
     text-align: center; /* Выравнивание текста в ШАГ1-2-3 */
     box-shadow: 10px 20px 20px 0px rgba(230, 233, 239, 0.5);
     color: var(--textH-color);
-    outline: 0.1rem solid;
-    outline-color: #f0f9ff;
+   border-block-start: 0.1rem #f0f9ff; 0.1rem solid;
+    
 }
 
 .shag-carousel strong {
