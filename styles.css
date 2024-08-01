@@ -340,9 +340,8 @@ border: 2px solid var(--white-color);
 
 .modal-content {
     background-color: var(--white-color);
-    margin: 5% auto;
-    padding: 20px;
-    border: 1px solid var(--text-color);
+    margin: 1% auto;
+    padding: 25px;
     width: 80%;
     max-width: 800px;
     position: relative;
@@ -366,7 +365,7 @@ border: 2px solid var(--white-color);
 .button-close {
     display: block;
     width: 120px;
-    margin: 20px auto 0;
+    margin: 20px auto 60px;
     color: var(--white-color);
     border: none;
     border-radius: 5px;
