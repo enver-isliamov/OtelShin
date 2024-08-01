@@ -169,9 +169,9 @@ flex-wrap: wrap;
 
 .uslugi-item {
     display: flex; /* Гарантируем, что все внутренние элементы также будут располагаться горизонтально */
-    gap: 10px; /* Добавим промежуток между элементами, если нужно */
+    gap: 20px; /* Добавим промежуток между элементами, если нужно */
     vertical-align: top;
-    margin: 0 10px;
+    margin: 10px 50px 20px 50px;
     width: calc(50% - 20px);
     max-width: 100px;
     transition: transform .3s ease;
