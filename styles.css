@@ -419,6 +419,7 @@ border: 2px solid var(--white-color);
         .location {
             flex-grow: 1;
             text-align: center;
+		font-size: 16px;
         }
         .phone-icon {
             width: 24px; /* Установите ширину иконки телефона */
