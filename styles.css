@@ -136,7 +136,7 @@ flex-wrap: wrap;
     padding: 10px; /* Добавим отступы внутри элементов */
     border-radius: 10px;
     text-align: center; /* Выравнивание текста в ШАГ1-2-3 */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 10px 20px 20px 0px rgba(230, 233, 239, 0.5);
     color: var(--textH-color);
 }
 
