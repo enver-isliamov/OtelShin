@@ -121,7 +121,7 @@ border-radius: 10px;
     display: block;
 }
 
-.carousel {
+.shagi {
     display: flex; /* Используем Flexbox для горизонтального расположения элементов */
     gap: 10px; /* Добавляем промежуток между элементами */
     justify-content: center;
