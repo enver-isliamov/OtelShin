@@ -151,12 +151,12 @@ border-radius: 10px;
     line-height: 1.4;
 }
 
-.carousel-price-item .price-text {
+.uslugi-item .price-text {
     font-size: 12px;
     margin-top: 10px;
 }
 
-.carousel-price {
+.uslugi {
     overflow-x: auto;
 background: var(--white-color);
     margin-bottom: 1em;
@@ -165,7 +165,7 @@ background: var(--white-color);
     display: flex; /* Используем Flexbox для горизонтального расположения элементов */
 }
 
-.carousel-price-item {
+.uslugi-item {
     display: flex; /* Гарантируем, что все внутренние элементы также будут располагаться горизонтально */
     gap: 10px; /* Добавим промежуток между элементами, если нужно */
     vertical-align: top;
@@ -176,7 +176,7 @@ background: var(--white-color);
     white-space: normal;
 }
 
-.carousel-price-item .tile { /* Текуст в карточки услуг*/
+.uslugi-item .tile { /* Текуст в карточки услуг*/
     text-align: center;
     padding: 5px;
     background: var(--white-color);
@@ -187,12 +187,12 @@ background: var(--white-color);
     color: var(--textH-color);
 }
 
-.carousel-price-item .tile img {
+.uslugi-item .tile img {
     max-width: 100%;
     border-radius: 10px;
 }
 
-.carousel-price-item .tile .price-text {
+.uslugi-item .tile .price-text {
     font-size: 12px;
     font-weight: 700;
     white-space: break-spaces;
@@ -387,7 +387,7 @@ border: 2px solid var(--white-color);
     .carousel {
         flex-wrap: wrap;
     }
-    .shag-carousel, .carousel-price-item {
+    .shag-carousel, .uslugi-item {
         flex: 0 0 100%;
         margin-bottom: 20px;
     }
