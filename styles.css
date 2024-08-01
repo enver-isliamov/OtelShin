@@ -68,7 +68,6 @@ p {
     width: 100%;
     padding: 20px;
     box-sizing: border-box;
-    background-color: var(--bgncolor);
     border-radius: 10px;
     margin: 0 auto;
     color: var(--text-color);
