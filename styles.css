@@ -243,7 +243,7 @@ flex-wrap: wrap;
 }
 
 .contacts {
-    background-color: var(--white-color);
+    /* background-color: var(--white-color); */
     padding: 20px;
     text-align: center;
     margin-top: 30px;
