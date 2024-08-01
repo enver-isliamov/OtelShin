@@ -13,6 +13,7 @@
     --light-blue: #eff7fd;
     --button-bg: #0af;
     --button-hover-bg: #0099e6;
+	--bgncolor: #f7f9fc;
 }
 
 body {
@@ -67,7 +68,7 @@ p {
     width: 100%;
     padding: 20px;
     box-sizing: border-box;
-    background-color: var(--white-color);
+    background-color: var(--bgncolor);
     border-radius: 10px;
     margin: 0 auto;
     color: var(--text-color);
