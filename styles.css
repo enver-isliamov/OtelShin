@@ -387,7 +387,12 @@ border: 2px solid var(--white-color);
     .carousel {
         flex-wrap: wrap;
     }
-    .shag-carousel, .uslugi-item {
+    .shag-carousel{
+        flex: 0 0 100%;
+        margin-bottom: 20px;
+    }
+	.uslugi-item 
+	{
         flex: 0 0 100%;
         margin-bottom: 20px;
     }
