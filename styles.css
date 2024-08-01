@@ -126,6 +126,7 @@ border-radius: 10px;
     gap: 10px; /* Добавляем промежуток между элементами */
     justify-content: center;
     margin-bottom: 1em;
+flex-wrap: wrap;
 
 }
 
