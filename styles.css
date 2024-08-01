@@ -160,7 +160,6 @@ flex-wrap: wrap;
 
 .uslugi {
     overflow-x: auto;
-background: var(--white-color);
     margin-bottom: 1em;
     width: calc(100%);
     white-space: nowrap;
