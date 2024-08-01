@@ -171,7 +171,7 @@ flex-wrap: wrap;
     display: flex; /* Гарантируем, что все внутренние элементы также будут располагаться горизонтально */
     gap: 20px; /* Добавим промежуток между элементами, если нужно */
     vertical-align: top;
-    margin: 10px 50px 20px 50px;
+    margin: 10px 50px 20px 40px;
     width: calc(50% - 20px);
     max-width: 100px;
     transition: transform .3s ease;
