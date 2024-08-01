@@ -129,7 +129,7 @@ border-radius: 10px;
 
 }
 
-.carousel-item {
+.shag-carousel {
     flex: 1; /* Элементы будут занимать равное пространство */
     background-color: var(--white-color);
     padding: 10px; /* Добавим отступы внутри элементов */
@@ -139,14 +139,14 @@ border-radius: 10px;
     color: var(--textH-color);
 }
 
-.carousel-item strong {
+.shag-carousel strong {
     display: block;
     font-size: 12px;
     margin-bottom: 10px;
 
 }
 
-.carousel-item p {
+.shag-carousel p {
     font-size: 12px;
     line-height: 1.4;
 }
@@ -387,7 +387,7 @@ border: 2px solid var(--white-color);
     .carousel {
         flex-wrap: wrap;
     }
-    .carousel-item, .carousel-price-item {
+    .shag-carousel, .carousel-price-item {
         flex: 0 0 100%;
         margin-bottom: 20px;
     }
