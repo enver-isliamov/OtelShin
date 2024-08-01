@@ -414,7 +414,7 @@ border: 2px solid var(--white-color);
             z-index: 1000;
         }
         .logo {
-            height: 40px; /* Установите высоту логотипа */
+            height: 32px; /* Установите высоту логотипа */
         }
         .location {
             flex-grow: 1;
