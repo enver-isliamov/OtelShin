@@ -222,6 +222,10 @@ flex-wrap: wrap;
     margin-bottom: 20px;
     text-align: left;
     color: var(--textH-color);
+background-image: url(https://ld-wp73.template-help.com/monstroid2/skins/gomechanic/wp-content/uploads/2021/02/carbg.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .additional-info strong {
