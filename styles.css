@@ -5,7 +5,7 @@
 
 
 :root {
-    --font-family:"Noto Sans", sans-serif; /* "Exo 2", sans-serif;   "Yanone Kaffeesatz", sans-serif; */
+    --font-family:"Montserrat", sans-serif; /* Noto Sans "Exo 2", sans-serif;   "Yanone Kaffeesatz", sans-serif; */
     --background-gradient: linear-gradient(120deg, #f0f9ff 50%, #fff 100%);
     --text-color: #6C7486;
     --textH-color: #3F4656;
