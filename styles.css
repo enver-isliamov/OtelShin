@@ -226,6 +226,9 @@ background-image: url(https://otelshin.ru/carbg.webp);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
+	    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    border-color: #eff7fd;
 }
 
 .additional-info strong {
