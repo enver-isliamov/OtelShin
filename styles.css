@@ -4,7 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Yanone+Kaffeesatz:wght@200..700&display=swap');
 :root {
-    --font-family:, "Noto Sans" sans-serif; /* Noto Sans "Exo 2", sans-serif; "Montserrat"  "Yanone Kaffeesatz" */
+    --font-family:, 'Montserrat' sans-serif; /* Noto Sans "Exo 2", sans-serif; "Montserrat"  "Yanone Kaffeesatz" */
     --background-gradient: linear-gradient(120deg, #f0f9ff 50%, #fff 100%);
     --text-color: #6C7486;
     --textH-color: #3F4656;
