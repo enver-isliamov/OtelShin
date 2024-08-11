@@ -5,7 +5,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
-    --font-family:"Montserrat", sans-serif; /* Noto Sans "Exo 2", sans-serif;   "Yanone Kaffeesatz", sans-serif; */
+    --font-family:, "Yanone Kaffeesatz" sans-serif; /* Noto Sans "Exo 2", sans-serif;   , sans-serif; "Montserrat"*/
     --background-gradient: linear-gradient(120deg, #f0f9ff 50%, #fff 100%);
     --text-color: #6C7486;
     --textH-color: #3F4656;
@@ -205,7 +205,7 @@ flex-wrap: wrap;
     background-color: #e3e5ed;
     border-radius: 10px;
     display: inline-block;
-    font-size: 12px;
+    font-size: 10px;
     font-weight: 400;
     line-height: 20px;
     margin-left: 6px;
