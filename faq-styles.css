@@ -1,33 +1,85 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    margin: 0;
-    padding: 20px;
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+
+:root {
+    --font-family: "Noto Sans", sans-serif;
+    --background-gradient: linear-gradient(120deg, #f0f9ff 50%, #fff 100%);
+    --text-color: #6C7486;
+    --textH-color: #3F4656;
+    --white-color: #fff;
+    --light-blue: #eff7fd;
+    --button-bg: #0af;
+    --button-hover-bg: #0099e6;
 }
 
-.faq-container {
-    max-width: 800px;
-    margin: auto;
-    background: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+body {
+    font-family: var(--font-family);
+    background: var(--background-gradient);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1, h2, h3 {
+    color: var(--textH-color);
 }
 
 h1 {
-    text-align: center;
-    color: #333;
+    font-size: 2em;
+    margin-bottom: 20px;
 }
 
-.faq-item {
-    margin: 20px 0;
+h2 {
+    font-size: 1.5em;
+    margin: 20px 0 10px;
 }
 
-.faq-item h2 {
-    color: #007BFF;
-}
-
-.faq-item p, .faq-item ul {
+h3 {
+    font-size: 1.2em;
     margin: 10px 0;
-    line-height: 1.6;
+}
+
+.container {
+    max-width: 1080px;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.faq-section {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: var(--white-color);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.list-item {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.list-item:before {
+    content: "✔️ ";
+}
+
+footer {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.button {
+    display: inline-block;
+    background-color: var(--button-bg);
+    color: var(--white-color);
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: var(--button-hover-bg);
 }
