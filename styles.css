@@ -214,6 +214,39 @@ flex-wrap: wrap;
     top: -1px;
 }
 
+/* --- БЛОК С КЕЙСАМИ ---- */
+.keysi {
+    overflow-x: auto;
+    margin-bottom: 1em;
+    width: calc(100%);
+    white-space: nowrap;
+    display: flex; /* Используем Flexbox для горизонтального расположения элементов */
+}
+
+.keysi-item {
+	font-size: 12px;
+	margin-top: 10px;
+	display: flex; /* Гарантируем, что все внутренние элементы также будут располагаться горизонтально */
+    gap: 20px; /* Добавим промежуток между элементами, если нужно */
+    vertical-align: top;
+    margin: 10px 50px 20px 40px;
+    width: calc(50% - 20px);
+    max-width: 100px;
+    transition: transform .3s ease;
+    white-space: normal;
+	text-align: center;
+    padding: 5px;
+    background: var(--white-color);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	min-width: 200px; /* Минимальная ширина элемента */
+    color: var(--textH-color);
+   
+
+    font-weight: 700;
+    white-space: break-spaces;
+  }
+
 
 .additional-info { /* Блок голубой условия и что еще нужно знать*/
     background-color: var(--light-blue);
