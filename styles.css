@@ -411,12 +411,12 @@ border: 2px solid var(--white-color);
             left: 0;
             right: 0;
             height: 48px;
-            background-color: #f8f9fa;
+            background-color: #f0f9ff;
             display: flex;
             align-items: center;
             justify-content: space-between;
             padding: 0 20px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 2px 25px rgba(0, 0, 0, 0.1);
             z-index: 1000;
         }
         .logo {
