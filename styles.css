@@ -227,7 +227,7 @@ background-image: url(https://otelshin.ru/bg-kolesa.webp);
     background-size: cover;
 	    border-style: solid;
     border-width: 1px 1px 1px 1px;
-    border-color: #eff7fd;
+    border-color: #f37461; /* первый вариант голубой рамки ##eff7fd */
 }
 
 .additional-info strong {
