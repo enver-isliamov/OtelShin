@@ -65,10 +65,10 @@ p {
 .container {
     max-width: 1080px;
     width: 100%;
-    padding: 10px;
+    padding: 1em;
     box-sizing: border-box;
     border-radius: 10px;
-    margin: 0 auto;
+    margin: 5%;
     color: var(--text-color);
     text-align: center; /* Выровнять текст по центру */
 
