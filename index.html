@@ -357,5 +357,14 @@
     </div>
 
 <script src="script.js"></script>
+
+ <h1>Авторизация через Telegram</h1>
+    <a href="<?php echo htmlspecialchars($auth_url); ?>">Войти с помощью Telegram</a>
+
+    <?php if (isset($firstName)): ?>
+        <div id="user-info">
+            <?php echo "Привет, " . htmlspecialchars($firstName); ?>
+        </div>
+    <?php endif; ?>
 </body>
 </html>
