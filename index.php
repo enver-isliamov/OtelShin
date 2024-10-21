@@ -5,7 +5,7 @@ use Google\Client;
 use Google\Service\Sheets;
 
 // Настройки бота
-$bot_id = '6473374979:AAH8OHCxWN2kO0ep9wrbLXolk2ys4__GLqg';
+$bot_id = '6473374979';
 $scope = 'phone_number,first_name,last_name';
 $public_key = 'ВАШ_PUBLIC_KEY';
 $nonce = bin2hex(random_bytes(16));
@@ -36,7 +36,7 @@ if (isset($_GET['hash']) && isset($_GET['payload'])) {
     $service = new Sheets($client);
     
     // ID вашей таблицы
-    $spreadsheetId = 'ВАШ_SPREADSHEET_ID';
+    $spreadsheetId = '10meNWqZNAeRmD-K0_2U3f4e3gcqMeywBHFDq3Sg4lXY';
     
     // Данные для добавления
     $values = [[$chatId, $firstName, $lastName, $phoneNumber]];
