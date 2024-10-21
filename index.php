@@ -5,7 +5,7 @@ use Google\Client;
 use Google\Service\Sheets;
 
 // Настройки бота
-$bot_id = 'ВАШ_BOT_ID';
+$bot_id = '6473374979:AAH8OHCxWN2kO0ep9wrbLXolk2ys4__GLqg';
 $scope = 'phone_number,first_name,last_name';
 $public_key = 'ВАШ_PUBLIC_KEY';
 $nonce = bin2hex(random_bytes(16));
