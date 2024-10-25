@@ -472,9 +472,9 @@ border: 2px solid var(--white-color);
         
         
  /* Основной контейнер */
-.containkomu {
+.cablok {
     max-width: 800px; /* Максимальная ширина контейнера */
-    margin: auto; /* Центрирование контейнера */
+    
     background-color: #ffffff; /* Цвет фона контейнера */
     border-radius: 10px; /* Скругление углов контейнера */
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Тень для контейнера */
