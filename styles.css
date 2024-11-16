@@ -260,12 +260,10 @@ flex-wrap: wrap;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
 }
-
-footer {
+.footer {
     margin-top: 20px;
     text-align: center;
 }
-
 .button {
     display: inline-block;
     background-color: var(--button-bg);
@@ -304,7 +302,7 @@ footer {
 
 .faq-content { /* ответ */
     padding: 10px;
-    border-left: 3px solid #0af; полоска синяя слева от ответа
+    border-left: 3px solid #0af; /* полоска синяя слева от ответа */
     text-align: left; /* Выравнивание текста по левому краю */
  	background-color:  var(--white-color); /* Цвет фона в ответе по умолчанию */
 	margin-bottom: 20px; /*отступ после ответа*/
