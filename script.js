@@ -55,3 +55,39 @@ function toggleFaq(element) {
 }
 // <-- Функция частые вопросы открываются и смена +/-
 
+
+//ПОДПИСЬ ///////////////
+ const canvas = document.getElementById('canvas');
+    const ctx = canvas.getContext('2d');
+    let drawing = false;
+
+    // Устанавливаем размеры canvas
+    canvas.width = document.getElementById('signature-pad').clientWidth;
+    canvas.height = document.getElementById('signature-pad').clientHeight;
+
+    // Начало рисования
+    canvas.addEventListener('mousedown', (e) => {
+        drawing = true;
+        ctx.beginPath();
+        ctx.moveTo(e.offsetX, e.offsetY);
+    });
+
+    // Рисование
+    canvas.addEventListener('mousemove', (e) => {
+        if (drawing) {
+            ctx.lineTo(e.offsetX, e.offsetY);
+            ctx.stroke();
+        }
+    });
+
+    // Окончание рисования
+    canvas.addEventListener('mouseup', () => {
+        drawing = false;
+        ctx.closePath();
+    });
+
+    // Очистка canvas
+    document.getElementById('clear').addEventListener('click', () => {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+    });
+//ПОДПИСЬ <-- ///////////////
